@@ -1,0 +1,68 @@
+body {
+  font-family: "Titillium Web", sans-serif;
+}
+#pokedex-container {
+  margin: 50px 0 50px 0;
+  border-radius: 10px;
+  background-color: #cf3056;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+#new-pokemon {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(105, 176, 105);
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+#new-pokemon:hover {
+  background-color: rgb(111, 197, 111);
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  padding: 50px 0 20px 0;
+}
+#poke-images {
+  margin: 0 20px 20px 20px;
+  text-align: center;
+  /* border-radius: 10px; */
+}
+.poke-card {
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+  opacity: 90%;
+  transition: opacity 0.3s, box-shadow 0.3s;
+}
+
+.poke-img {
+  margin: auto;
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+}
+.poke-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  opacity: 100%;
+}
+.poke-name {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
