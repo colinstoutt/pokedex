@@ -14,7 +14,7 @@
         <section id="poke-images">
           <% for(let i = 0; i < pokemon.length; i++){ %>
           <div class="poke-card">
-            <a href="<%= i %>"
+            <a href="pokemon/<%= i %>"
               ><img class="poke-img" src="<%=pokemon[i].img%>"
             /></a>
             <p class="poke-name"><%=pokemon[i].name%></p>

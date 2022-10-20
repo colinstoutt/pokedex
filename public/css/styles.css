@@ -19,15 +19,15 @@ header {
 }
 #new-pokemon {
   text-decoration: none;
-  color: white;
-  background-color: rgb(105, 176, 105);
+  color: black;
+  background-color: rgb(108, 211, 108);
   padding: 5px 15px;
   border-radius: 10px;
   margin-top: 10px;
   transition: background-color 0.3s;
 }
 #new-pokemon:hover {
-  background-color: rgb(111, 197, 111);
+  background-color: rgb(91, 173, 91);
 }
 h1 {
   color: white;
@@ -133,22 +133,52 @@ h1 {
   justify-content: start;
 }
 #types {
-  width: 130px;
+  width: 140px;
 }
 #stats {
-  width: 170px;
+  width: 160px;
 }
 #show-card-details ul {
   margin: 10px 20px 10px 20px;
   font-size: 20px;
+  list-style: none;
 }
 #show-card-details ul p {
   font-weight: bold;
   color: black;
   margin: 0;
 }
+#show-card-details ul a {
+  padding: 0;
+  margin: 0;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #cf3056;
+  opacity: 40%;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-size: 10px;
+  margin-left: 5px;
+}
+#show-card-details ul a:hover {
+  opacity: 100%;
+}
 
 #show-card-details li {
   margin: 0;
   font-size: 18px;
+}
+footer {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+footer a {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+}
+footer a:last-child {
+  color: #cf3056;
 }
