@@ -17,6 +17,9 @@ header {
   align-items: center;
   gap: 50px;
 }
+header h1 {
+  font-weight: 700;
+}
 #new-pokemon {
   text-decoration: none;
   color: black;
@@ -27,7 +30,7 @@ header {
   transition: background-color 0.3s;
 }
 #new-pokemon:hover {
-  background-color: rgb(91, 173, 91);
+  background-color: rgb(122, 219, 122);
 }
 h1 {
   color: white;
@@ -133,10 +136,17 @@ h1 {
   justify-content: start;
 }
 #types {
-  width: 140px;
+  width: 130px;
+}
+#types li {
+  display: flex;
 }
 #stats {
-  width: 160px;
+  width: 170px;
+}
+.type-icon {
+  width: 20px;
+  margin-right: 3px;
 }
 #show-card-details ul {
   margin: 10px 20px 10px 20px;
@@ -181,4 +191,27 @@ footer a {
 }
 footer a:last-child {
   color: #cf3056;
+}
+footer input[type="submit"] {
+  color: #cf3056;
+  border: none;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-size: 15px;
+  margin-top: 13px;
+  padding: 0;
+}
+i {
+  font-size: 17px;
+  margin-right: 5px;
+}
+.fa-heart {
+  color: #df1b48;
+}
+.fa-shield-halved {
+  color: rgb(22, 174, 234);
+}
+/* new.ejs */
+form input {
+  margin: 10px;
 }
