@@ -18,25 +18,42 @@
             <ul>
               <p>Types</p>
               <% for(let i = 0; i < pokemon.type.length; i++){ %>
-              <li><%= pokemon.type[i]%></li>
+              <li>
+                <img
+                  class="type-icon"
+                  src="<%= type[9].svg%>"
+                  alt=""
+                /><%=pokemon.type[i]%>
+              </li>
+
               <% } %>
             </ul>
           </div>
           <div id="stats">
             <ul>
               <p>Stats</p>
-
-              <li>hp: <%= pokemon.stats.hp%></li>
-              <li>attack: <%= pokemon.stats.attack%></li>
-              <li>defense: <%= pokemon.stats.defense%></li>
+              <li>
+                <i class="fa-solid fa-heart"></i>hp: <%= pokemon.stats.hp%>
+              </li>
+              <li>
+                <i class="fa-solid fa-bomb"></i>attack: <%=
+                pokemon.stats.attack%>
+              </li>
+              <li>
+                <i class="fa-solid fa-shield-halved"></i>defense: <%=
+                pokemon.stats.defense%>
+              </li>
             </ul>
           </div>
         </div>
       </div>
       <footer>
-        <a href="/pokemon">Back to Pokedex</a>
-        <a href="/pokemon">Delete Pokemon</a>
+        <a href="/pokemon">Back to Pok&eacute;dex</a>
+        <form action="/pokemon/<%=index%>?_method=DELETE" method="POST">
+          <input type="submit" value="Delete Pok&eacute;mon" />
+        </form>
       </footer>
     </div>
+    <script></script>
   </body>
 </html>
