@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head.ejs')%>
+  </head>
+  <body>
+    <div class="container">
+      <div id="pokedex-container">
+        <form action="/pokemon" method="POST">
+          <h1>Create a Pok&eacute;mon</h1>
+          <p>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="new-name" />
+          </p>
+          <p>
+            <label for="img">Image(URL):</label>
+            <input type="text" name="img" id="new-image" />
+          </p>
+          <p>
+            <label for="type">Types:</label>
+            <input type="text" name="type" id="new-type" />
+          </p>
+          <p>
+            <label for="hp">Health Points:</label>
+            <input type="text" name="hp" id="new-hp" />
+          </p>
+          <p>
+            <label for="attack">Attack:</label>
+            <input type="text" name="attack" id="new-attack" />
+          </p>
+          <p>
+            <label for="defense">Defense:</label>
+            <input type="text" name="defense" id="new-defense" />
+          </p>
+          <input value="Create Pok&eacute;mon" type="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
