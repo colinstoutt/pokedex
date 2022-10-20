@@ -8,13 +8,15 @@
       <div id="pokedex-container">
         <header>
           <h1>POKEDEX</h1>
-          <a id="new-pokemon" href="">Add Pokemon</a>
+          <a id="new-pokemon" href="/pokemon/new">Add Pokemon</a>
         </header>
 
         <section id="poke-images">
           <% for(let i = 0; i < pokemon.length; i++){ %>
           <div class="poke-card">
-            <a href=""><img class="poke-img" src="<%=pokemon[i].img%>" /></a>
+            <a href="<%= i %>"
+              ><img class="poke-img" src="<%=pokemon[i].img%>"
+            /></a>
             <p class="poke-name"><%=pokemon[i].name%></p>
           </div>
 

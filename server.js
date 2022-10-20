@@ -18,6 +18,13 @@ app.get("/pokemon", (req, res) => {
 });
 
 // show
+app.get("/pokemon/:id", (req, res) => {
+  console.log(pokemon[req.params.id].stats);
+  res.render("show.ejs", {
+    pokemon: pokemon[req.params.id],
+    tabTitle: pokemon[req.params.id].name,
+  });
+});
 
 // new
 

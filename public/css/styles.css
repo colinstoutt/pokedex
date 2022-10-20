@@ -1,6 +1,8 @@
-body {
+* {
   font-family: "Titillium Web", sans-serif;
 }
+
+/* index */
 #pokedex-container {
   margin: 50px 0 50px 0;
   border-radius: 10px;
@@ -65,4 +67,88 @@ h1 {
   font-family: "Titillium Web", sans-serif;
   font-size: 18px;
   margin: 0;
+  font-weight: bold;
+}
+
+/* show */
+#show-card {
+  max-width: 300px;
+  height: 450px;
+  margin: 50px auto 0 auto;
+  background-color: #cf3056;
+  border: solid 10px #ffd65b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#show-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 50px;
+}
+#show-card-header p {
+  display: inline;
+  text-align: center;
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  padding: 1px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#show-card-header a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  background-color: rgb(108, 211, 108);
+  padding: 1px 10px;
+  border-radius: 5px;
+}
+#show-card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 190px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#show-card-img img {
+  width: auto;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+}
+
+#show-card-details {
+  background-color: #ffd65b;
+  color: black;
+  margin-top: 20px;
+  width: 300px;
+  height: 190px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: start;
+}
+#types {
+  width: 130px;
+}
+#stats {
+  width: 170px;
+}
+#show-card-details ul {
+  margin: 10px 20px 10px 20px;
+  font-size: 20px;
+}
+#show-card-details ul p {
+  font-weight: bold;
+  color: black;
+  margin: 0;
+}
+
+#show-card-details li {
+  margin: 0;
+  font-size: 18px;
 }
