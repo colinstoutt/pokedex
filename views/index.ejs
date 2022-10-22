@@ -5,7 +5,7 @@
   </head>
   <body>
     <div class="container">
-      <div id="pokedex-container">
+      <div class="pokedex-container">
         <header>
           <h1>POK&Eacute;DEX</h1>
           <a id="new-pokemon" href="/pokemon/new">Create a Pok&eacute;mon</a>
@@ -14,7 +14,7 @@
         <section id="poke-images">
           <% for(let i = 0; i < pokemon.length; i++){ %>
           <div class="poke-card">
-            <a href="pokemon/<%= i %>"
+            <a href="/pokemon/<%= i %>"
               ><img class="poke-img" src="<%=pokemon[i].img%>"
             /></a>
             <p class="poke-name"><%=pokemon[i].name%></p>
