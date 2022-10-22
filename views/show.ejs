@@ -8,7 +8,7 @@
       <div id="show-card">
         <header id="show-card-header">
           <p><%= pokemon.name %></p>
-          <a href="">Edit</a>
+          <a href="/pokemon/<%=index%>/edit">Edit</a>
         </header>
         <div id="show-card-img">
           <img src="<%= pokemon.img%>" alt="" />
@@ -18,14 +18,7 @@
             <ul>
               <p>Types</p>
               <% for(let i = 0; i < pokemon.type.length; i++){ %>
-              <li>
-                <img
-                  class="type-icon"
-                  src="<%= type[9].svg%>"
-                  alt=""
-                /><%=pokemon.type[i]%>
-              </li>
-
+              <li id="type-name"><%=pokemon.type[i]%></li>
               <% } %>
             </ul>
           </div>
@@ -54,6 +47,5 @@
         </form>
       </footer>
     </div>
-    <script></script>
   </body>
 </html>
