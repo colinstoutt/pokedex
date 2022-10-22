@@ -23,14 +23,14 @@ header h1 {
 #new-pokemon {
   text-decoration: none;
   color: black;
-  background-color: rgb(108, 211, 108);
+  background-color: rgb(122, 219, 122);
   padding: 5px 15px;
   border-radius: 10px;
   margin-top: 10px;
   transition: background-color 0.3s;
 }
 #new-pokemon:hover {
-  background-color: rgb(122, 219, 122);
+  background-color: rgb(108, 211, 108);
 }
 h1 {
   color: white;
@@ -140,11 +140,12 @@ h1 {
 }
 #types li {
   display: flex;
+  align-items: center;
 }
 #stats {
   width: 170px;
 }
-.type-icon {
+#type-icon {
   width: 20px;
   margin-right: 3px;
 }
