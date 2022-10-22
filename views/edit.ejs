@@ -5,7 +5,7 @@
   </head>
   <body>
     <div class="container">
-      <div id="pokedex-container">
+      <div class="pokedex-container form-container">
         <form action="/pokemon/<%=index%>?_method=PUT" method="POST">
           <h1>Edit Pok&eacute;mon</h1>
           <p>
@@ -14,7 +14,7 @@
           </p>
           <p>
             <label for="img">Image(URL):</label>
-            <input type="text" name="img" value="<%= pokemon.img.src %>" />
+            <input type="text" name="img" value="<%= pokemon.img %>" />
           </p>
           <p>
             <label for="type">Type(s):</label>
@@ -42,7 +42,7 @@
               value="<%= pokemon.stats.attack %>"
             />
           </p>
-          <input value="Edit Pok&eacute;mon" type="submit" />
+          <input id="create-btn" value="Edit Pok&eacute;mon" type="submit" />
         </form>
       </div>
     </div>
