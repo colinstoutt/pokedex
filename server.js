@@ -35,7 +35,7 @@ app.put("/pokemon/:id", (req, res) => {
   req.body.stats.attack = req.body.stats[1];
   req.body.stats.defense = req.body.stats[2];
   pokemon[req.params.id] = req.body;
-  res.redirect("/pokemon/:id");
+  res.redirect("/pokemon/");
 });
 // ===create===
 app.post("/pokemon/", (req, res) => {
