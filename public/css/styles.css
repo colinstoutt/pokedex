@@ -3,7 +3,7 @@
 }
 
 /* index */
-#pokedex-container {
+.pokedex-container {
   margin: 50px 0 50px 0;
   border-radius: 10px;
   background-color: #cf3056;
@@ -212,7 +212,24 @@ i {
 .fa-shield-halved {
   color: rgb(22, 174, 234);
 }
-/* new.ejs */
+.form-container {
+  max-width: 600px;
+  margin: 50px auto 50px auto;
+}
+form h1 {
+  font-weight: 700;
+}
 form input {
-  margin: 10px;
+  margin-left: 20px;
+}
+label {
+  color: white;
+  margin-left: 20px;
+}
+#create-btn {
+  color: white;
+}
+#create-btn:hover {
+  border: 1px solid white;
+  color: white;
 }
