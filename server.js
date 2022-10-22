@@ -1,6 +1,7 @@
 const PORT = 3000;
 // ===dependencies===
 const pokemon = require("./models/pokemon");
+const types = require("./models/types");
 const express = require("express");
 const app = express();
 const methodOverride = require("method-override");
@@ -57,6 +58,7 @@ app.get("/pokemon/:id/edit", (req, res) => {
 app.get("/pokemon/:id", (req, res) => {
   res.render("show.ejs", {
     pokemon: pokemon[req.params.id],
+    type: types,
     index: req.params.id,
     tabTitle: pokemon[req.params.id].name,
   });

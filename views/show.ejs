@@ -18,7 +18,13 @@
             <ul>
               <p>Types</p>
               <% for(let i = 0; i < pokemon.type.length; i++){ %>
-              <li id="type-name"><%=pokemon.type[i]%></li>
+              <li id="type-name">
+                <img
+                  id="type-svg"
+                  src="<%= type[12].svg %>"
+                  alt=""
+                /><%=pokemon.type[i]%>
+              </li>
               <% } %>
             </ul>
           </div>
