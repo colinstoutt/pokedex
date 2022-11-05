@@ -32,14 +32,17 @@ app.delete("/pokemon/:id", (req, res) => {
 });
 // ===update===
 app.put("/pokemon/:id", (req, res) => {
+  //great solution using the array values of name-stats!
   req.body.stats.hp = req.body.stats[0];
   req.body.stats.attack = req.body.stats[1];
   req.body.stats.defense = req.body.stats[2];
   pokemon[req.params.id] = req.body;
-  res.redirect("/pokemon/");
+  //i would redirect to the newly edited pokemon to let the user see all the changes
+  res.redirect(`/pokemon/${req.params.id}`);
 });
 // ===create===
 app.post("/pokemon/", (req, res) => {
+  //great solution using the array values of name-stats!
   req.body.stats.hp = req.body.stats[0];
   req.body.stats.attack = req.body.stats[1];
   req.body.stats.defense = req.body.stats[2];
